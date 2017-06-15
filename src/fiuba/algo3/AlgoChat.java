@@ -17,7 +17,7 @@ public class AlgoChat {
     }
 
     public int cantidadDeChatsIndividuales() {
-        return 0;
+        return this.usuario.cantidadDeChatsIndividuales();
     }
 
     public int cantidadDeContactos() {
@@ -25,15 +25,15 @@ public class AlgoChat {
     }
 
     public int cantidadDeChatsGrupales() {
-        return 0;
+        return this.usuario.cantidadDeChatsGrupales();
     }
 
     public int cantidadDeGrupos() {
-        return 0;
+        return this.usuario.cantidadDeGrupos();
     }
 
     public int cantidadDeMensajesEnviados() {
-        return 0;
+        return this.usuario.cantidadTotalmensajesEnviados();
     }
 
     public String nombreUsuario() {
@@ -45,29 +45,32 @@ public class AlgoChat {
     }
 
     public boolean existeContacto(String unNombreContacto) {
-        return true;
+        return this.usuario.esContacto(unNombreContacto);
     }
 
     public void recibirMensajeDe(String unEmisor, String unContenido) {
+        this.usuario.recibirMensajeDe(unEmisor, unContenido);
     }
 
     public int cantidadTotalMensajesRecibidos() {
-        return 1;
+
+        return this.usuario.cantidadTotalMensajesRecibidos();
     }
 
     public int cantidadMensajesDe(String unContacto){
-        return 1;
+        return this.usuario.cantidadMensajesDe(unContacto);
     }
 
     public void enviarMensajeA(String unReceptor, String unContenido) {
     }
 
     public int cantidadTotalMensajesEnviados() {
-        return 1;
+        return this.usuario.cantidadTotalmensajesEnviados();
     }
 
     public int cantidadMensajesEnviadosA(String unContacto) {
-        return 1;
+
+        return this.usuario.cantidadMensajesEnviadosA(unContacto);
     }
 
     public Conversacion obtenerConversacionCon(String unContacto) {
@@ -90,12 +93,40 @@ public class AlgoChat {
     }
 
     public int cantidadMiembrosEnGrupo(String nombreGrupo) {
-        //buscar Grupo: manejo de Errores
-        return  3;
+        return  this.usuario.cantidadMiembrosEnGrupo(nombreGrupo);
     }
 
     public boolean existeGrupo(String nombreGrupo) {
-        //buscar Grupo: manejo de Errores
-        return true;
+        return this.usuario.existeGrupo(nombreGrupo);
+    }
+
+    public void recibirMensajeDeGrupo(String nombreGrupo, String miembroEmisor, String contenidoMensaje) {
+        this.usuario.recibirMensajeDeGrupo(nombreGrupo, miembroEmisor, contenidoMensaje);
+    }
+
+    public void enviarMensajeAGrupo(String nombreGrupo, String contenidoMensaje) {
+        this.usuario.enviarMensajeDeGrupo(nombreGrupo, contenidoMensaje);
+    }
+
+    public int cantidadMensajesRecibidosDelGrupo(String nombreGrupo) {
+
+        return this.usuario.cantidadDeMensajesRecibidosDelGrupo(nombreGrupo);
+    }
+
+    public int cantidadMensajesEnviadosAlGrupo(String nombreGrupo) {
+
+        return this.usuario.cantidadDeMensajesEnviadosAlGrupo(nombreGrupo);
+    }
+
+    public Conversacion obtenerConversacionConGrupo(String nombreGrupo) {
+        return this.usuario.obtenerConversacionConGrupo(nombreGrupo);
+    }
+
+    public void borrarMensajesDelContacto(String nombreContacto) {
+        this.usuario.borrarMensajesDelContacto(nombreContacto);
+    }
+
+    public void borrarMensajesDelGrupo(String nombreGrupo) {
+        this.usuario.borrarMensajesDelGrupo(nombreGrupo);
     }
 }

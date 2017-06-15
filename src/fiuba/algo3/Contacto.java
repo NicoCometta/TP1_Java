@@ -12,6 +12,32 @@ public class Contacto {
         this.nombre = unNombre;
         //conversacion = new Conversacion();
     }
+
+    public int cantidadMensajes() {
+        return this.conversacion.cantidadMensajes();
+    }
+
+    public int cantidadMensajesEnviadosAContacto() {
+        return this.conversacion.cantidadMensajesEnviados();
+    }
+
+    public boolean esContacto(String unNombreContacto) {
+        return (this.nombre == unNombreContacto);
+    }
+
+    public void recibirMensaje(String unContenido) {
+        MensajeRecibido nuevoMensaje = new MensajeRecibido("Yo",this.nombre,unContenido);
+
+        this.conversacion.agregarMensaje(nuevoMensaje);
+    }
+
+    public void borrarMensajes() {
+        this.conversacion.borrarMensajes();
+    }
+
+    public int cantidadMensajesRecibidosDeContacto() {
+        return this.conversacion.cantidadMensajesRecibidos();
+    }
     /*
     public void Nombre(String unNombreContacto) {
         nombre = unNombreContacto;

@@ -1,4 +1,5 @@
-import fiuba.algo3.AlgoChat;
+package fiuba.algo3;
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
