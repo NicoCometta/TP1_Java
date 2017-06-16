@@ -7,16 +7,21 @@ import java.util.ArrayList;
  */
 public class Grupo {
 
+    //region Atributos
     private String nombre;
     private ArrayList<Contacto> miembros;
     private Conversacion conversacion;
+    //end region
 
+    // region Constructor
     public Grupo(String nombreGrupo) {
         this.nombre = nombreGrupo;
 
         miembros = new ArrayList<Contacto>();
     }
+    // end region
 
+    //region Métodos Públicos
     public void agregarContacto(String nombreContacto) {
         Contacto nuevoMiembro = new Contacto(nombreContacto);
 
@@ -56,4 +61,5 @@ public class Grupo {
 
         this.conversacion.agregarMensaje(nuevoMensaje);
     }
+    // end region
 }

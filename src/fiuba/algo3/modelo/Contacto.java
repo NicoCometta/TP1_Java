@@ -5,14 +5,19 @@ package fiuba.algo3;
  */
 public class Contacto {
 
+    //region Atributos
     private String nombre;
     private Conversacion conversacion;
+    //end region
 
+    //region Constructores
     public Contacto(String unNombre){
         this.nombre = unNombre;
         //conversacion = new Conversacion();
     }
+    //end region
 
+    //region Métodos Públicos
     public int cantidadMensajes() {
         return this.conversacion.cantidadMensajes();
     }
@@ -38,14 +43,5 @@ public class Contacto {
     public int cantidadMensajesRecibidosDeContacto() {
         return this.conversacion.cantidadMensajesRecibidos();
     }
-    /*
-    public void Nombre(String unNombreContacto) {
-        nombre = unNombreContacto;
-    }
-
-
-    public String Nombre(){
-        return nombre;
-    }
-    */
+    //end region
 }

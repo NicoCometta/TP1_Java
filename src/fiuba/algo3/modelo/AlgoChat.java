@@ -5,17 +5,17 @@ package fiuba.algo3;
  */
 public class AlgoChat {
 
+    //region Atributos
     private Usuario usuario;
+    //endregion
 
+    //region Constructor
     public AlgoChat (String nombreUsuario){
         usuario = this.nuevoUsuario(nombreUsuario);
     }
+    //endregion
 
-    private Usuario nuevoUsuario(String nombreUsuario) {
-        Usuario unUsuario = new Usuario(nombreUsuario);
-        return unUsuario;
-    }
-
+    //region Métodos Públicos
     public int cantidadDeChatsIndividuales() {
         return this.usuario.cantidadDeChatsIndividuales();
     }
@@ -61,7 +61,8 @@ public class AlgoChat {
         return this.usuario.cantidadMensajesDe(unContacto);
     }
 
-    public void enviarMensajeA(String unReceptor, String unContenido) {
+    public void enviarMensajeA(String unContacto, String unContenido) {
+        this.usuario.enviarMensajeA(unContacto, unContenido);
     }
 
     public int cantidadTotalMensajesEnviados() {
@@ -88,10 +89,6 @@ public class AlgoChat {
         unGrupo.agregarContacto(unContacto);
     }
 
-    private Grupo grupo(String nombreGrupo) {
-        return new Grupo(nombreGrupo);
-    }
-
     public int cantidadMiembrosEnGrupo(String nombreGrupo) {
         return  this.usuario.cantidadMiembrosEnGrupo(nombreGrupo);
     }
@@ -109,12 +106,10 @@ public class AlgoChat {
     }
 
     public int cantidadMensajesRecibidosDelGrupo(String nombreGrupo) {
-
         return this.usuario.cantidadDeMensajesRecibidosDelGrupo(nombreGrupo);
     }
 
     public int cantidadMensajesEnviadosAlGrupo(String nombreGrupo) {
-
         return this.usuario.cantidadDeMensajesEnviadosAlGrupo(nombreGrupo);
     }
 
@@ -129,4 +124,17 @@ public class AlgoChat {
     public void borrarMensajesDelGrupo(String nombreGrupo) {
         this.usuario.borrarMensajesDelGrupo(nombreGrupo);
     }
+    //endregion
+
+    //region Métodos Privados
+    private Usuario nuevoUsuario(String nombreUsuario) {
+        Usuario unUsuario = new Usuario(nombreUsuario);
+        return unUsuario;
+    }
+
+    private Grupo grupo(String nombreGrupo) {
+        return new Grupo(nombreGrupo);
+    }
+
+    //endregion
 }

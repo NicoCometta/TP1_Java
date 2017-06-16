@@ -9,10 +9,7 @@ public abstract class Mensaje {
     private String receptor;
     private String contenido;
 
-    public String getContenido() {
-        return contenido;
-    }
-
+    //region Métodos getters
     public void setContenido(String contenido) {
         this.contenido = contenido;
     }
@@ -24,10 +21,23 @@ public abstract class Mensaje {
     public void setReceptor(String receptor) {
         this.receptor = receptor;
     }
+    //endregion
 
+    //region Métodos getters
+    public String getEmisor() {
+        return emisor;
+    }
+
+    public String getContenido() {
+        return contenido;
+    }
+    //endregion
+
+    //region Métodos Públicos Abtractos
     public abstract int enviado();
 
     public abstract int recibido();
+    //endregion
 }
 
 

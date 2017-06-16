@@ -4,12 +4,16 @@ package fiuba.algo3;
  * Created by nico on 13/06/17.
  */
 public class MensajeRecibido extends Mensaje {
+
+    //region Constructor
     public MensajeRecibido(String yoUsuario, String unEmisor, String unContenido) {
         this.setReceptor(yoUsuario);
         this.setEmisor(unEmisor);
         this.setContenido(unContenido);
     }
+    //endregion
 
+    //region Métodos Públicos
     @java.lang.Override
     public int enviado() {
         return 0;
@@ -19,4 +23,5 @@ public class MensajeRecibido extends Mensaje {
     public int recibido() {
         return 1;
     }
+    //endregion
 }

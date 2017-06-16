@@ -7,11 +7,14 @@ import java.util.ArrayList;
  */
 public class Conversacion {
 
+    //region Atributos
     private ArrayList<Mensaje> mensajes = new ArrayList<Mensaje>();
+    //endregion
 
+    //region Métodos Públicos
     public String get(int unMensaje){
-        //Devuelve el mensaje armado
-        return "Yo: Te dije que si...";
+        //return "Yo: Te dije que si...";
+        return this.obtenerMensajeArmado(unMensaje);
     }
 
     public int cantidadMensajes() {
@@ -42,8 +45,20 @@ public class Conversacion {
         this.mensajes.add(nuevoMensaje);
     }
 
-
     public void borrarMensajes() {
         this.mensajes.clear();
     }
+    //endregion
+
+    //region Métodos Privados
+    private String obtenerMensajeArmado(int unMensaje) {
+        if (this.cantidadMensajes() == 0) throw new Exception();
+
+        int posicionMensaje = unMensaje-1;
+
+        Mensaje esteMensaje = this.mensajes.get(posicionMensaje);
+
+        return esteMensaje.getEmisor().toString() + ": " + esteMensaje.getContenido().toString();
+    }
+    //endregion
 }

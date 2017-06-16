@@ -6,16 +6,22 @@ package fiuba.algo3;
 import java.util.ArrayList;
 
 public class Usuario {
+
+    //region Atributos
     private String nombre;
     private ArrayList<Contacto> contactos;
     private ArrayList<Grupo> grupos;
+    //endregion
 
+    //region Constructor
     public Usuario(String unNombre){
         this.nombre = unNombre;
         contactos = new ArrayList<Contacto>();
         grupos = new ArrayList<Grupo>();
     }
+    //endregion
 
+    //region Métodos Públicos
     public void agregarContacto(String unNombreContacto) {
         Contacto nuevoContacto = new Contacto(unNombreContacto);
 
@@ -27,7 +33,7 @@ public class Usuario {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void crearGrupo(String nombreGrupo) {
@@ -39,16 +45,6 @@ public class Usuario {
 
     public int cantidadDeChatsIndividuales() {
         return this.calcularChatsIndividuales();
-    }
-
-    private int calcularChatsIndividuales() {
-        int cantidadRetorno = 0;
-
-        for (Grupo cadaGrupo: this.grupos) {
-            if (cadaGrupo.cantidadMensajes()>0)
-                cantidadRetorno ++;
-        }
-        return cantidadRetorno;
     }
 
     public int cantidadDeChatsGrupales() {
@@ -63,24 +59,6 @@ public class Usuario {
 
     public int cantidadTotalmensajesEnviados() {
         return (this.cantidadMensajesEnviadosAContactos() + this.cantidadMensajesEnviadosAGrupos());
-    }
-
-    private int cantidadMensajesEnviadosAContactos() {
-        int cantidadRetorno =0;
-
-        for (Contacto cadaContacto: this.contactos) {
-            cantidadRetorno += cadaContacto.cantidadMensajesEnviadosAContacto();
-        }
-        return cantidadRetorno;
-    }
-
-    private int cantidadMensajesEnviadosAGrupos() {
-        int cantidadRetorno =0;
-
-        for (Grupo cadaGrupo: this.grupos) {
-            cantidadRetorno += cadaGrupo.cantidadMensajesEnviadosAGrupo();
-        }
-        return cantidadRetorno;
     }
 
     public int cantidadDeGrupos() {
@@ -108,15 +86,6 @@ public class Usuario {
         return cantidadRetorno;
     }
 
-    private Grupo obtenerGrupo(String nombreGrupo){
-        for (Grupo cadaGrupo: this.grupos) {
-            if (cadaGrupo.esGrupo(nombreGrupo))
-                return cadaGrupo;
-        }
-        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
-        return null; //momentaneo
-    }
-
     public Conversacion obtenerConversacionConGrupo(String nombreGrupo) {
         return (this.obtenerGrupo(nombreGrupo)).obtenerConversacion();
     }
@@ -138,35 +107,8 @@ public class Usuario {
         esteContacto.recibirMensaje(unContenido);
     }
 
-    private Contacto obtenerContacto(String unEmisor) {
-        for (Contacto cadaContacto: this.contactos) {
-            if (cadaContacto.esContacto(unEmisor))
-                return cadaContacto;
-        }
-        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
-        return null; //momentaneo
-    }
-
     public int cantidadTotalMensajesRecibidos() {
         return (this.cantidadMensajesRecibidosDeContactos() + this.cantidadMensajesRecibidosDeGrupos());
-    }
-
-    private int cantidadMensajesRecibidosDeGrupos() {
-        int cantidadRetorno =0;
-
-        for (Grupo cadaGrupo: this.grupos) {
-            cantidadRetorno += cadaGrupo.cantidadMensajesRecibidosDeGrupo();
-        }
-        return cantidadRetorno;
-    }
-
-    private int cantidadMensajesRecibidosDeContactos() {
-        int cantidadRetorno =0;
-
-        for (Contacto cadaContacto: this.contactos) {
-            cantidadRetorno += cadaContacto.cantidadMensajesRecibidosDeContacto();
-        }
-        return cantidadRetorno;
     }
 
     public void borrarMensajesDelContacto(String nombreContacto) {
@@ -210,11 +152,92 @@ public class Usuario {
         this.grupoRecibeMensaje(nombreGrupo,contenidoMensaje,this.nombre);
     }
 
+    public void enviarMensajeA(String unContacto, String contenidoMensaje) {
+        this.contactoRecibeMensaje(unContacto,contenidoMensaje);
+    }
+
+    //endregion
+
+    //region Métodos Privados
     private void grupoRecibeMensaje(String nombreGrupo, String contenidoMensaje, String miembroEmisor) {
-        //if (!this.esContacto(unEmisor))
-        //    throw new Exception("No se verifica Contacto");
+        //if (!this.esGrupo(unEmisor))
+        //    throw new Exception("No se verifica Grupo");
         Grupo esteGrupo = this.obtenerGrupo(nombreGrupo);
 
         esteGrupo.recibirMensaje(contenidoMensaje,miembroEmisor);
     }
+
+    private void contactoRecibeMensaje(String unContacto, String contenidoMensaje) {
+        //if (!this.esContacto(unEmisor))
+        //    throw new Exception("No se verifica Contacto");
+        Contacto esteContacto = this.obtenerContacto(unContacto);
+
+        esteContacto.recibirMensaje(contenidoMensaje);
+    }
+
+    private int calcularChatsIndividuales() {
+        int cantidadRetorno = 0;
+
+        for (Grupo cadaGrupo: this.grupos) {
+            if (cadaGrupo.cantidadMensajes()>0)
+                cantidadRetorno ++;
+        }
+        return cantidadRetorno;
+    }
+
+    private int cantidadMensajesEnviadosAContactos() {
+        int cantidadRetorno =0;
+
+        for (Contacto cadaContacto: this.contactos) {
+            cantidadRetorno += cadaContacto.cantidadMensajesEnviadosAContacto();
+        }
+        return cantidadRetorno;
+    }
+
+    private int cantidadMensajesEnviadosAGrupos() {
+        int cantidadRetorno =0;
+
+        for (Grupo cadaGrupo: this.grupos) {
+            cantidadRetorno += cadaGrupo.cantidadMensajesEnviadosAGrupo();
+        }
+        return cantidadRetorno;
+    }
+
+    private Grupo obtenerGrupo(String nombreGrupo){
+        for (Grupo cadaGrupo: this.grupos) {
+            if (cadaGrupo.esGrupo(nombreGrupo))
+                return cadaGrupo;
+        }
+        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
+        return null; //momentaneo
+    }
+
+    private Contacto obtenerContacto(String unEmisor) {
+        for (Contacto cadaContacto: this.contactos) {
+            if (cadaContacto.esContacto(unEmisor))
+                return cadaContacto;
+        }
+        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
+        return null; //momentaneo
+    }
+
+    private int cantidadMensajesRecibidosDeGrupos() {
+        int cantidadRetorno =0;
+
+        for (Grupo cadaGrupo: this.grupos) {
+            cantidadRetorno += cadaGrupo.cantidadMensajesRecibidosDeGrupo();
+        }
+        return cantidadRetorno;
+    }
+
+    private int cantidadMensajesRecibidosDeContactos() {
+        int cantidadRetorno =0;
+
+        for (Contacto cadaContacto: this.contactos) {
+            cantidadRetorno += cadaContacto.cantidadMensajesRecibidosDeContacto();
+        }
+        return cantidadRetorno;
+    }
+
+    //endregion
 }
