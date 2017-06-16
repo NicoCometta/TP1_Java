@@ -44,7 +44,7 @@ public class Contacto {
         return this.conversacion.cantidadMensajesRecibidos();
     }
 
-    public Conversacion getConversacion() {
+    public Conversacion c() {
         return this.conversacion;
     }
 
@@ -52,6 +52,10 @@ public class Contacto {
         MensajeEnviado nuevoMensaje = new MensajeEnviado("Yo",this.nombre,contenidoMensaje);
 
         this.conversacion.agregarMensaje(nuevoMensaje);
+    }
+
+    public boolean chatIniciado() {
+        return (this.cantidadMensajes() > 0);
     }
     //end region
 }

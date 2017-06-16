@@ -4,13 +4,9 @@
     <list default="true" id="5aa63b12-eca4-4cca-851a-4766031b27d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeRecibido.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeRecibido.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Usuario.java" afterPath="$PROJECT_DIR$/src/fiuba/algo3/modelo/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fiuba/algo3/integral/AlgoChatTests.java" afterPath="$PROJECT_DIR$/test/fiuba/algo3/integral/AlgoChatTests.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +17,62 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MensajeEnviado.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MensajeRecibido.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeRecibido.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contacto.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="30" />
+              <folding>
+                <element signature="docComment;class#Contacto#0" expanded="false" />
+                <element signature="method#Contacto#0;class#Contacto#0" expanded="false" />
+                <element signature="method#recibirMensaje#0;class#Contacto#0" expanded="false" />
+                <element signature="method#enviarMensaje#0;class#Contacto#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Conversacion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="method#cantidadMensajesEnviados#0;class#Conversacion#0" expanded="false" />
+                <element signature="method#cantidadMensajesRecibidos#0;class#Conversacion#0" expanded="false" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="method#obtenerMensajeArmado#0;class#Conversacion#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,19 +102,19 @@
         <option value="$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeRecibido.java" />
         <option value="$PROJECT_DIR$/test/fiuba/algo3/integral/AlgoChatTests.java" />
-        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java" />
-        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java" />
-        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionGruposInexistente.java" />
-        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Usuario.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionContactoInexistente.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionGrupoInexistente.java" />
         <option value="$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionNoHayMensajes.java" />
+        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java" />
+        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java" />
+        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java" />
+        <option value="$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java" />
       </list>
     </option>
   </component>
@@ -88,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,11 +208,34 @@
               <option name="myItemId" value="algo3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modelo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1_Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +515,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1217" height="732" extended-state="6" />
+    <frame x="64" y="-11" width="1217" height="732" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -458,8 +532,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33909464" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21728395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -471,6 +544,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -507,7 +581,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -516,163 +590,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="217" column="29" lean-forward="false" selection-start-line="217" selection-start-column="29" selection-end-line="217" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Contacto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeRecibido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="107" column="34" lean-forward="false" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1960">
-          <caret line="102" column="33" lean-forward="false" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Contacto.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeRecibido.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java" />
+    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java" />
+    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java" />
     <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/ejemplo1/Foo.java" />
-    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java" />
     <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/ejemplo1/Foo.java" />
     <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChat.java" />
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeEnviado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Contacto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeRecibido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Mensaje.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2569">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="155" column="62" lean-forward="false" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeEnviado.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Contacto.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Grupo.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/MensajeRecibido.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Mensaje.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Conversacion.java" />
+    <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/AlgoChatTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/Usuario.java" />
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/AlgoChat.java" />
     <entry file="file://$PROJECT_DIR$/test/fiuba/algo3/integral/AlgoChatTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3720">
@@ -681,28 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionGruposInexistente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionGruposInexistente.java" />
     <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/excepciones/ExceptionContactoInexistente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -719,8 +640,8 @@
         <state relative-caret-position="140">
           <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#258#259#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,11 +659,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="221" column="8" lean-forward="false" selection-start-line="221" selection-start-column="8" selection-end-line="221" selection-end-column="8" />
+        <state relative-caret-position="331">
+          <caret line="246" column="66" lean-forward="true" selection-start-line="246" selection-start-column="66" selection-end-line="246" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Usuario#0;class#Usuario#0" expanded="false" />
+            <element signature="method#agregarContacto#0;class#Usuario#0" expanded="false" />
+            <element signature="method#crearGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadDeChatsGrupales#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadTotalmensajesEnviados#0;class#Usuario#0" expanded="false" />
+            <element signature="method#esContacto#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadMiembrosEnGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#obtenerConversacionConGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#existeGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#recibirMensajeDe#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadTotalMensajesRecibidos#0;class#Usuario#0" expanded="false" />
+            <element signature="method#borrarMensajesDelContacto#0;class#Usuario#0" expanded="false" />
+            <element signature="method#borrarMensajesDelGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadMensajesEnviadosA#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadDeMensajesRecibidosDelGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#cantidadDeMensajesEnviadosAlGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#recibirMensajeDeGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#enviarMensajeDeGrupo#0;class#Usuario#0" expanded="false" />
+            <element signature="method#enviarMensajeA#0;class#Usuario#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+          <folding>
+            <element signature="method#recibirMensajeDe#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#cantidadTotalMensajesRecibidos#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#enviarMensajeA#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#cantidadMensajesEnviadosA#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#obtenerConversacionCon#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#agregarContactoAGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#cantidadMiembrosEnGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#recibirMensajeDeGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#enviarMensajeAGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#cantidadMensajesRecibidosDelGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#cantidadMensajesEnviadosAlGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#obtenerConversacionConGrupo#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#borrarMensajesDelContacto#0;class#AlgoChat#0" expanded="false" />
+            <element signature="method#nuevoUsuario#0;class#AlgoChat#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="54" column="47" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="47" />
+          <folding>
+            <element signature="method#agregarMiembro#0;class#Grupo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Conversacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="method#cantidadMensajesEnviados#0;class#Conversacion#0" expanded="false" />
+            <element signature="method#cantidadMensajesRecibidos#0;class#Conversacion#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="method#obtenerMensajeArmado#0;class#Conversacion#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,48 +763,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/MensajeEnviado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Mensaje.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Grupo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/Contacto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="30" />
           <folding>
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fiuba/algo3/modelo/AlgoChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="65" column="33" lean-forward="false" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding>
-            <element signature="method#recibirMensajeDe#0;class#AlgoChat#0" expanded="false" />
-            <element signature="method#cantidadTotalMensajesRecibidos#0;class#AlgoChat#0" expanded="false" />
+            <element signature="docComment;class#Contacto#0" expanded="false" />
+            <element signature="method#Contacto#0;class#Contacto#0" expanded="false" />
+            <element signature="method#recibirMensaje#0;class#Contacto#0" expanded="false" />
+            <element signature="method#enviarMensaje#0;class#Contacto#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -22,7 +22,7 @@ public class Grupo {
     // end region
 
     //region Métodos Públicos
-    public void agregarContacto(String nombreContacto) {
+    public void agregarMiembro(String nombreContacto) {
         Contacto nuevoMiembro = new Contacto(nombreContacto);
 
         miembros.add(nuevoMiembro);

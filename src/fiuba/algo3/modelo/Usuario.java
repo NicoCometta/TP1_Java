@@ -103,11 +103,10 @@ public class Usuario {
     }
 
     public void recibirMensajeDe(String unEmisor, String unContenido) {
-        //if (!this.esContacto(unEmisor))
-        //    throw new Exception("No se verifica Contacto");
-        Contacto esteContacto = this.obtenerContacto(unEmisor);
+        if (!this.esContacto(unEmisor))
+            throw new ExceptionContactoInexistente();
 
-        esteContacto.recibirMensaje(unContenido);
+        this.obtenerContacto(unEmisor).recibirMensaje(unContenido);
     }
 
     public int cantidadTotalMensajesRecibidos() {
@@ -179,8 +178,8 @@ public class Usuario {
     private int calcularChatsIndividuales() {
         int cantidadRetorno = 0;
 
-        for (Grupo cadaGrupo: this.grupos) {
-            if (cadaGrupo.cantidadMensajes()>0)
+        for (Contacto cadaContacto: this.contactos) {
+            if (cadaContacto.chatIniciado())
                 cantidadRetorno ++;
         }
         return cantidadRetorno;
@@ -242,6 +241,10 @@ public class Usuario {
 
     public Conversacion obtenerConversacionConContacto(String unContacto) {
         return this.obtenerContacto(unContacto).getConversacion();
+    }
+
+    public void agregarMiembroAGrupo(String unContacto, String nombreGrupo) {
+        this.obtenerGrupo(nombreGrupo).agregarMiembro(unContacto);
     }
 
     //endregion

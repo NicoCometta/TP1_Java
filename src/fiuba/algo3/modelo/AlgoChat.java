@@ -84,9 +84,7 @@ public class AlgoChat {
     }
 
     public void agregarContactoAGrupo(String unContacto, String nombreGrupo) {
-        Grupo unGrupo = this.grupo(nombreGrupo);
-
-        unGrupo.agregarContacto(unContacto);
+        this.usuario.agregarMiembroAGrupo(unContacto, nombreGrupo);
     }
 
     public int cantidadMiembrosEnGrupo(String nombreGrupo) {
@@ -132,7 +130,7 @@ public class AlgoChat {
         return unUsuario;
     }
 
-    private Grupo grupo(String nombreGrupo) {
+    private Grupo nuevoGrupo(String nombreGrupo) {
         return new Grupo(nombreGrupo);
     }
 

@@ -25,11 +25,11 @@ public abstract class Mensaje {
 
     //region Métodos getters
     public String getEmisor() {
-        return emisor;
+        return this.emisor;
     }
 
     public String getContenido() {
-        return contenido;
+        return this.contenido;
     }
     //endregion
 
