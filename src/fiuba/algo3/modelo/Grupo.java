@@ -1,4 +1,4 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
 
 import java.util.ArrayList;
 
@@ -16,8 +16,8 @@ public class Grupo {
     // region Constructor
     public Grupo(String nombreGrupo) {
         this.nombre = nombreGrupo;
-
         miembros = new ArrayList<Contacto>();
+        this.conversacion = new Conversacion();
     }
     // end region
 

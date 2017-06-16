@@ -1,8 +1,11 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
 
 /**
  * Created by nico on 13/06/17.
  */
+import fiuba.algo3.excepciones.ExceptionContactoInexistente;
+import fiuba.algo3.excepciones.ExceptionGrupoInexistente;
+
 import java.util.ArrayList;
 
 public class Usuario {
@@ -160,19 +163,17 @@ public class Usuario {
 
     //region Métodos Privados
     private void grupoRecibeMensaje(String nombreGrupo, String contenidoMensaje, String miembroEmisor) {
-        //if (!this.esGrupo(unEmisor))
-        //    throw new Exception("No se verifica Grupo");
-        Grupo esteGrupo = this.obtenerGrupo(nombreGrupo);
+        if (!this.existeGrupo(nombreGrupo))
+            throw new ExceptionGrupoInexistente();
 
-        esteGrupo.recibirMensaje(contenidoMensaje,miembroEmisor);
+        this.obtenerGrupo(nombreGrupo).recibirMensaje(contenidoMensaje,miembroEmisor);
     }
 
     private void contactoRecibeMensaje(String unContacto, String contenidoMensaje) {
-        //if (!this.esContacto(unEmisor))
-        //    throw new Exception("No se verifica Contacto");
-        Contacto esteContacto = this.obtenerContacto(unContacto);
+        if (!this.esContacto(unContacto))
+            throw new ExceptionContactoInexistente();
 
-        esteContacto.recibirMensaje(contenidoMensaje);
+        this.obtenerContacto(unContacto).enviarMensaje(contenidoMensaje);
     }
 
     private int calcularChatsIndividuales() {
@@ -208,8 +209,8 @@ public class Usuario {
             if (cadaGrupo.esGrupo(nombreGrupo))
                 return cadaGrupo;
         }
-        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
-        return null; //momentaneo
+
+        throw new ExceptionGrupoInexistente();
     }
 
     private Contacto obtenerContacto(String unEmisor) {
@@ -217,8 +218,8 @@ public class Usuario {
             if (cadaContacto.esContacto(unEmisor))
                 return cadaContacto;
         }
-        //throw new Exception("Grupos inexistente: Verifique nombre del Grupo.");
-        return null; //momentaneo
+
+        throw new ExceptionContactoInexistente();
     }
 
     private int cantidadMensajesRecibidosDeGrupos() {
@@ -237,6 +238,10 @@ public class Usuario {
             cantidadRetorno += cadaContacto.cantidadMensajesRecibidosDeContacto();
         }
         return cantidadRetorno;
+    }
+
+    public Conversacion obtenerConversacionConContacto(String unContacto) {
+        return this.obtenerContacto(unContacto).getConversacion();
     }
 
     //endregion

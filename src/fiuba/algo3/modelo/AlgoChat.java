@@ -1,4 +1,5 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
+
 
 /**
  * Created by nico on 13/06/17.
@@ -75,8 +76,7 @@ public class AlgoChat {
     }
 
     public Conversacion obtenerConversacionCon(String unContacto) {
-        Conversacion unaConversacion = new Conversacion();
-        return unaConversacion;
+        return this.usuario.obtenerConversacionConContacto(unContacto);
     }
 
     public void crearGrupo(String nombreGrupo) {

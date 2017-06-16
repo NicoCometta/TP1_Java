@@ -1,4 +1,4 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
 
 import org.junit.Test;
 

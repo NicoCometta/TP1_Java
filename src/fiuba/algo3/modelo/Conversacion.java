@@ -1,4 +1,6 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
+
+import fiuba.algo3.excepciones.ExceptionNoHayMensajes;
 
 import java.util.ArrayList;
 
@@ -8,12 +10,17 @@ import java.util.ArrayList;
 public class Conversacion {
 
     //region Atributos
-    private ArrayList<Mensaje> mensajes = new ArrayList<Mensaje>();
+    private ArrayList<Mensaje> mensajes;
+    //endregion
+
+    //region Constructor
+    public Conversacion (){
+        this.mensajes = new ArrayList<Mensaje>();
+    }
     //endregion
 
     //region Métodos Públicos
     public String get(int unMensaje){
-        //return "Yo: Te dije que si...";
         return this.obtenerMensajeArmado(unMensaje);
     }
 
@@ -52,9 +59,9 @@ public class Conversacion {
 
     //region Métodos Privados
     private String obtenerMensajeArmado(int unMensaje) {
-        if (this.cantidadMensajes() == 0) throw new Exception();
+        if (this.cantidadMensajes() == 0) throw new ExceptionNoHayMensajes();
 
-        int posicionMensaje = unMensaje-1;
+        int posicionMensaje = unMensaje - 1;
 
         Mensaje esteMensaje = this.mensajes.get(posicionMensaje);
 

@@ -1,4 +1,4 @@
-package fiuba.algo3;
+package fiuba.algo3.modelo;
 
 /**
  * Created by nico on 13/06/17.
@@ -13,7 +13,7 @@ public class Contacto {
     //region Constructores
     public Contacto(String unNombre){
         this.nombre = unNombre;
-        //conversacion = new Conversacion();
+        this.conversacion = new Conversacion();
     }
     //end region
 
@@ -42,6 +42,16 @@ public class Contacto {
 
     public int cantidadMensajesRecibidosDeContacto() {
         return this.conversacion.cantidadMensajesRecibidos();
+    }
+
+    public Conversacion getConversacion() {
+        return this.conversacion;
+    }
+
+    public void enviarMensaje(String contenidoMensaje) {
+        MensajeEnviado nuevoMensaje = new MensajeEnviado("Yo",this.nombre,contenidoMensaje);
+
+        this.conversacion.agregarMensaje(nuevoMensaje);
     }
     //end region
 }
